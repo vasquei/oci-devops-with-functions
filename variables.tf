@@ -11,7 +11,7 @@ variable "compartment_ocid" {
 }
 variable "region" {
   description = "region selected for each user"
-  default = "us-ashburn-1"
+  default  = "us-ashburn-1"
 } 
 
 variable "app_name" {
