@@ -53,12 +53,12 @@ variable "fnsubnet-CIDR" {
 
 variable "oci_user_name" {
   #sensitive = true
-  default = ""
+  default = "oracleidentitycloudservice/ivan.v.vasquez@oracle.com"
 }
 
 variable "oci_user_authtoken" {
   #sensitive = true
-  default = ""
+  default = "(my{Xa[OU07g3-2]#x8U"
 }
 
 # OCIR repo name & namespace
