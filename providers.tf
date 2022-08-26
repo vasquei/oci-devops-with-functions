@@ -25,19 +25,19 @@ terraform {
 }
 
 provider "oci" {
-      tenancy-ocid = var.tenancy-ocid
+      tenancy-ocid = var.tenancy_ocid
       region       = var.region
 }
 
 provider "oci" {
       alias        = "home_region"
-      tenancy-ocid = var.tenancy-ocid
+      tenancy-ocid = var.tenancy_ocid
       #region       = lookup(data.oci-identity-regions.home-region.regions[0], "name")
       region = var.region
 }
 
 provider "oci" {
       alias        = "current_region"
-      tenancy-ocid = var.tenancy-ocid
+      tenancy-ocid = var.tenancy_ocid
       region       = var.region
 }
