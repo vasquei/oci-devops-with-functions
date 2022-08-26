@@ -1,9 +1,18 @@
 ## Copyright (c) 2021, Oracle and/or its affiliates.
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
-variable "tenancy_ocid" {}
-variable "compartment_ocid" {}
-variable "region" {} 
+variable "tenancy_ocid" {
+   description = "own tenancy of each user"
+   default = "ocid1.tenancy.oc1..aaaaaaaah2c25pobzyzvkcznnozputxfxtz3qvewrqaga7z66tdjrgvigbiq"
+}
+variable "compartment_ocid" {
+   description = "compartment selected for devops with functions"
+   default = "ocid1.compartment.oc1..aaaaaaaaezejouh7iykjzm67lg65qxhyhhxfkda5dnlm6j4zt5wzp4pdjyxq"
+}
+variable "region" {
+  description = "region selected for each user"
+  defauylt = "us-ashburn-1"
+} 
 
 variable "app_name" {
   default     = "oci-function-cicd"
