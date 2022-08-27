@@ -58,7 +58,7 @@ variable "oci_user_name" {
 
 variable "oci_user_authtoken" {
   #sensitive = true
-  default = "(my{Xa[OU07g3-2]#x8U"
+  default = "Ni7DSx+us3E+}qT-1oRs"
 }
 
 # OCIR repo name & namespace
