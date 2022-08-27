@@ -2,12 +2,6 @@
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 resource "oci_devops_build_run" "test_build_run_1" {
-
-  
-  provisioner "local-exec" {
-    command = "echo '(1) Is running in oci_devops_build_run previous to execute depends_on'"
-  }
-  
   
   depends_on = [oci_devops_build_pipeline_stage.test_build_pipeline_stage,
     oci_devops_build_pipeline_stage.test_deliver_artifact_stage,
@@ -15,10 +9,6 @@ resource "oci_devops_build_run" "test_build_run_1" {
     oci_devops_build_pipeline_stage.test_deploy_stage
     ]
   
-
-  provisioner "local-exec" {
-    command = "echo '(2) Is running in oci_devops_build_run after to execute depends_on'"
-  }
   
   #Required
   build_pipeline_id = oci_devops_build_pipeline.test_build_pipeline.id
