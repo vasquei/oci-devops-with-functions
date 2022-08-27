@@ -53,7 +53,7 @@ variable "fnsubnet-CIDR" {
 
 variable "oci_user_name" {
   #sensitive = true
-  default = "oracleidentitycloudservice/ivan.v.vasquez@oracle.com"
+  default = "ivan.v.vasquez@oracle.com"
 }
 
 variable "oci_user_authtoken" {
